@@ -18,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#FFE4C4" >
+
             <ImageButton
                 android:id="@+id/tab_content1"
                 android:layout_marginTop="100dp"
@@ -30,72 +31,79 @@
                 android:background="#FFE4C4"
                 android:src="@drawable/button_icon1"
                 android:scaleType="fitCenter" />
+
             <GridLayout
                 android:id="@+id/tab_content2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:columnCount="2"
                 android:orientation="vertical"
-                android:rowCount="3"
-                android:columnCount="2">
+                android:rowCount="3">
+
                 <ImageButton
                     android:id="@+id/sound0"
-                    android:src="@drawable/sound0_icon"
                     android:layout_width="170dp"
                     android:layout_height="155dp"
+                    android:layout_column="0"
                     android:layout_gravity="center"
                     android:layout_row="0"
-                    android:layout_column="0"
-                    android:scaleType="fitCenter"/>
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sound0_icon" />
+
                 <ImageButton
                     android:id="@+id/sound1"
-                    android:src="@drawable/sound1_icon"
                     android:layout_width="170dp"
                     android:layout_height="155dp"
-                    android:layout_row="0"
                     android:layout_column="1"
                     android:layout_gravity="center"
+                    android:layout_row="0"
+                    android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"/>
+                    android:src="@drawable/sound1_icon" />
+
                 <ImageButton
                     android:id="@+id/sound2"
-                    android:src="@drawable/sound2_icon"
                     android:layout_width="170dp"
                     android:layout_height="155dp"
-                    android:layout_row="1"
                     android:layout_column="0"
                     android:layout_gravity="center"
+                    android:layout_row="1"
+                    android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"/>
+                    android:src="@drawable/sound2_icon" />
+
                 <ImageButton
                     android:id="@+id/sound3"
-                    android:src="@drawable/sound3_icon"
                     android:layout_width="170dp"
                     android:layout_height="155dp"
-                    android:layout_row="1"
                     android:layout_column="1"
                     android:layout_gravity="center"
+                    android:layout_row="1"
+                    android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"/>
+                    android:src="@drawable/sound3_icon" />
+
                 <ImageButton
                     android:id="@+id/sound4"
-                    android:src="@drawable/sound4_icon"
                     android:layout_width="170dp"
                     android:layout_height="155dp"
-                    android:layout_row="2"
                     android:layout_column="0"
                     android:layout_gravity="center"
+                    android:layout_row="2"
+                    android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"/>
+                    android:src="@drawable/sound4_icon" />
+
                 <ImageButton
                     android:id="@+id/sound5"
-                    android:src="@drawable/sound5_icon"
                     android:layout_width="170dp"
                     android:layout_height="155dp"
-                    android:layout_row="2"
                     android:layout_column="1"
                     android:layout_gravity="center"
+                    android:layout_row="2"
+                    android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"/>
+                    android:src="@drawable/sound5_icon" />
             </GridLayout>
 
             <TextView
@@ -103,7 +111,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="made by SCHP\nSound Classification for Hearing-impaired Person"
+                android:text="@string/text"
                 android:textSize="30dp" />
 
         </FrameLayout>

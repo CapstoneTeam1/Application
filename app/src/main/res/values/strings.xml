@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SHCP project</string>
+    <string name="text">
+        made by SCHP \n
+        Sound Classification for Hearing-impaired Person
+    </string>
 </resources>
