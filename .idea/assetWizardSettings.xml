@@ -34,6 +34,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
+                                                <entry key="scalingPercent" value="103" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -56,9 +57,9 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="C:\Users\SPEECH\Desktop\캡스톤\tab_icon1.png" />
+                                      <entry key="foregroundImage" value="C:\Users\SPEECH\Desktop\캡스톤\tab_icon2.png" />
                                       <entry key="foregroundLayerName" value="ic_launcher_foreground" />
-                                      <entry key="outputName" value="tab_icon1.png" />
+                                      <entry key="outputName" value="tab_icon3.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
