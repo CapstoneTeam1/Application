@@ -1,0 +1,103 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d7df234a330c535219059a6ceabf6821\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\c5cf824a373dc6436c2d55f41ef0811b\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\da41345f14ed8517a109fc4903971d7c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\0953cc9201826b759a79bf938ecb5ecb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\2a627a91d3ce4f0f4aefaca7591d646c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\3cb9256c1247513c0e6c5fa55d7505c5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\15dde80be035a17ba50a1ef0352eee7e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\5f57dda6fe6ab0208f64d81bba5b0692\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\4764e2d507826aab0862ef7e2dee6efb\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\b9f3da2cdc94e69252140000d5d19450\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\85f50815df328321de5048061f62568d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e5ba3bfb87647d2f469040bf96d295cd\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\c5cf824a373dc6436c2d55f41ef0811b\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\c5cf824a373dc6436c2d55f41ef0811b\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:11:9-40
+activity#kr.ac.sogang.speech.shcpproject.MainActivity
+ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d7df234a330c535219059a6ceabf6821\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\d7df234a330c535219059a6ceabf6821\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\c5cf824a373dc6436c2d55f41ef0811b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\c5cf824a373dc6436c2d55f41ef0811b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\da41345f14ed8517a109fc4903971d7c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\da41345f14ed8517a109fc4903971d7c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\0953cc9201826b759a79bf938ecb5ecb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\0953cc9201826b759a79bf938ecb5ecb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\2a627a91d3ce4f0f4aefaca7591d646c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\2a627a91d3ce4f0f4aefaca7591d646c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\3cb9256c1247513c0e6c5fa55d7505c5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\3cb9256c1247513c0e6c5fa55d7505c5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\15dde80be035a17ba50a1ef0352eee7e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\15dde80be035a17ba50a1ef0352eee7e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\5f57dda6fe6ab0208f64d81bba5b0692\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\5f57dda6fe6ab0208f64d81bba5b0692\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\4764e2d507826aab0862ef7e2dee6efb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\4764e2d507826aab0862ef7e2dee6efb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\b9f3da2cdc94e69252140000d5d19450\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\b9f3da2cdc94e69252140000d5d19450\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\85f50815df328321de5048061f62568d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\85f50815df328321de5048061f62568d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e5ba3bfb87647d2f469040bf96d295cd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\SPEECH\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e5ba3bfb87647d2f469040bf96d295cd\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\SPEECH\AndroidStudioProjects\SHCPproject\app\src\main\AndroidManifest.xml
