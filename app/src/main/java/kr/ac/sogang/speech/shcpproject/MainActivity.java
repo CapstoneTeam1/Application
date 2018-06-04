@@ -42,11 +42,12 @@ public class MainActivity extends AppCompatActivity  {
     private DataInputStream networkReader;
     private boolean isConnected = false;
 
-    private final String SERVER_IP = "163.239.22.105";
+    private final String SERVER_IP = "163.239.22.136";
     //private final String SERVER_IP = "192.168.0.34";
-    private final int SERVER_PORT = 5000;
+    private final int SERVER_PORT = 52703;
 
     String result;
+    String[] list = {"0", "0", "0", "0", "0", "0"};
 
     @Override
     protected void onStop() {
@@ -100,7 +101,8 @@ public class MainActivity extends AppCompatActivity  {
                 }
 
                 Vibrator vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
-                vibrator.vibrate(1000);
+                if (msg.what != 5)
+                    vibrator.vibrate(1000);
             }
         };
 
@@ -122,7 +124,10 @@ public class MainActivity extends AppCompatActivity  {
                 @Override
                 public void onClick(View v) {
 
-                    Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
+                    for (int i=0; i<NUMBER_OF_SOUND; i++) {
+                        if (v == sound_button[i])
+                            Toast.makeText(getApplicationContext(), "Probability: " + list[i] + "%", Toast.LENGTH_SHORT).show();
+                    }
                 }
             });
         }
@@ -158,7 +163,6 @@ public class MainActivity extends AppCompatActivity  {
         @Override
         public void run() {
             String server_result;
-            String[] list;
             int index = 0;
 
             Log.d("Recv_Thread", "Recv thread start");
