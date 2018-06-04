@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity  {
 
 
     private Socket socket;
-    private BufferedReader networkReader;
+    private DataInputStream networkReader;
     private boolean isConnected = false;
 
     private final String SERVER_IP = "163.239.22.105";
@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity  {
         handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
+                Log.d("Handler", "Index:" + msg.what);
                 sound_button[msg.what].setBackgroundColor(Color.RED);
             }
         };
@@ -92,14 +93,13 @@ public class MainActivity extends AppCompatActivity  {
         connect_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("Connect_Button", "Connect button_pushed");
+
 
                 SocketThread connect_thread = new SocketThread();
-                Log.d("CONNECT_THREAD", "Connect button_pushed");
                 connect_thread.start();
-                if (isConnected) {
-                    RecvThread recv_thread = new RecvThread();
-                    recv_thread.start();
-                }
+
+                Log.d("Connect_Button", "isConnected:" + isConnected);
             }
         });
 
@@ -118,17 +118,19 @@ public class MainActivity extends AppCompatActivity  {
 
         @Override
         public void run() {
+            Log.d("Socket_Thread", "Socket thread start");
+
             if (!isConnected) {
                 try {
                     socket = new Socket(SERVER_IP, SERVER_PORT);
-                    networkReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                    networkReader = new DataInputStream(socket.getInputStream());
                     isConnected = true;
                     Log.d("CONNECT_THREAD", "isConnected true");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
-            else {
+           /* else {
                 try {
                     socket.close();
                     isConnected = false;
@@ -137,7 +139,12 @@ public class MainActivity extends AppCompatActivity  {
                     e.printStackTrace();
                 }
 
+            }*/
+            if (isConnected) {
+                RecvThread recv_thread = new RecvThread();
+                recv_thread.start();
             }
+            Log.d("Socket_Thread", "Socket thread end");
         }
     }
 
@@ -149,9 +156,10 @@ public class MainActivity extends AppCompatActivity  {
             String[] list;
             int index = 0;
 
+            Log.d("Recv_Thread", "Recv thread start");
             while(isConnected) {
                 try {
-                    server_result = networkReader.readLine();
+                    server_result = networkReader.readUTF();
                     list = server_result.split(",");
 
                     for (int i = 0; i < NUMBER_OF_SOUND; i++) {
