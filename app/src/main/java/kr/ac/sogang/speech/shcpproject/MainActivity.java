@@ -18,9 +18,11 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.DataInput;
 import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.Reader;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.List;
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity  {
     private boolean isConnected = false;
 
     private final String SERVER_IP = "163.239.22.105";
+    //private final String SERVER_IP = "192.168.0.34";
     private final int SERVER_PORT = 5000;
 
     String result;
@@ -86,7 +89,13 @@ public class MainActivity extends AppCompatActivity  {
             @Override
             public void handleMessage(Message msg) {
                 Log.d("Handler", "Index:" + msg.what);
-                sound_button[msg.what].setBackgroundColor(Color.RED);
+
+                for (int i=0; i<NUMBER_OF_SOUND; i++) {
+                    if (i == msg.what)
+                        sound_button[msg.what].setBackgroundColor(Color.RED);
+                    else
+                        sound_button[i].setBackgroundColor(getResources().getColor(R.color.buttonColor));
+                }
             }
         };
 
@@ -130,16 +139,7 @@ public class MainActivity extends AppCompatActivity  {
                     e.printStackTrace();
                 }
             }
-           /* else {
-                try {
-                    socket.close();
-                    isConnected = false;
-                    Log.d("CONNECT_THREAD", "isConnected false");
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
 
-            }*/
             if (isConnected) {
                 RecvThread recv_thread = new RecvThread();
                 recv_thread.start();
@@ -159,7 +159,11 @@ public class MainActivity extends AppCompatActivity  {
             Log.d("Recv_Thread", "Recv thread start");
             while(isConnected) {
                 try {
-                    server_result = networkReader.readUTF();
+                    byte[] temp = new byte[200];
+                    int num = networkReader.read(temp);
+
+                    server_result = new String(temp).trim();
+                    Log.d("Recv_Thread", "Recv:" + server_result);
                     list = server_result.split(",");
 
                     for (int i = 0; i < NUMBER_OF_SOUND; i++) {
