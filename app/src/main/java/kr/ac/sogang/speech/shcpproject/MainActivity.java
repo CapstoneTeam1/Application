@@ -1,9 +1,11 @@
 package kr.ac.sogang.speech.shcpproject;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.graphics.Color;
 import android.os.Handler;
 import android.os.Message;
+import android.os.Vibrator;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -96,6 +98,9 @@ public class MainActivity extends AppCompatActivity  {
                     else
                         sound_button[i].setBackgroundColor(getResources().getColor(R.color.buttonColor));
                 }
+
+                Vibrator vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+                vibrator.vibrate(1000);
             }
         };
 

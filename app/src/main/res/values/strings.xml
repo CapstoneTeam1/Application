@@ -2,6 +2,11 @@
     <string name="app_name">SHCP project</string>
     <string name="text">
         made by SCHP \n
-        Sound Classification for Hearing-impaired Person
+        Sound Classification for Hearing-impaired Person \n\n
+
+        Server : Kim Chang Min \n
+        Android : Son Hyun Soo \n
+        Rasp : Ahn Woong Chan \n
+        Design : Yoon Jae Ho
     </string>
 </resources>
