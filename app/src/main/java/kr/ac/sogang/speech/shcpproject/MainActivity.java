@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity  {
     private DataInputStream networkReader;
     private boolean isConnected = false;
 
-    private final String SERVER_IP = "163.239.22.136";
+    private final String SERVER_IP = "104.211.63.42";
     //private final String SERVER_IP = "192.168.0.34";
     private final int SERVER_PORT = 52703;
 
@@ -94,13 +94,15 @@ public class MainActivity extends AppCompatActivity  {
                 Log.d("Handler", "Index:" + msg.what);
 
                 for (int i=0; i<NUMBER_OF_SOUND; i++) {
-                    if (i == msg.what)
+                    if (i == msg.what) {
                         sound_button[msg.what].setBackgroundColor(Color.RED);
+                    }
                     else
                         sound_button[i].setBackgroundColor(getResources().getColor(R.color.buttonColor));
                 }
 
                 Vibrator vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+
                 if (msg.what != 5)
                     vibrator.vibrate(1000);
             }
@@ -178,6 +180,8 @@ public class MainActivity extends AppCompatActivity  {
                     for (int i = 0; i < NUMBER_OF_SOUND; i++) {
                         index = (Double.parseDouble(list[index]) > Double.parseDouble(list[i])) ? index : i;
                     }
+                    if (index == 2 && Double.parseDouble(list[2]) < 95.0)
+                        index = 5;
                     result = list[index];
                     Message msg = handler.obtainMessage();
                     msg.what = index;
